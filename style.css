@@ -1,0 +1,151 @@
+.cell-button{
+    font-family: inherit;
+    border: 1;
+   
+    outline-offset: -4px;
+    background: rgb(252, 102, 102);
+    box-shadow: inset -1px -1px #292929, inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 30px;
+  }
+   
+  .button1 {
+   
+    
+    
+    font-family: inherit;
+    border: 1;
+   
+    outline-offset: -4px;
+    background: #266DB6; 
+    box-shadow: inset -1px -1px #292929, inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 5px 30px;
+  }
+  
+  button:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #292929, inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+  }
+  .full-width-table {
+    width: 100%;
+   
+  }
+   #myTable td {
+      text-align: center;
+    }
+  
+  .modal {
+        display: none;
+        position: fixed;
+       z-index: 2;
+        left: 0;
+        top: 0;
+        
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .modal-content {
+        background-color: transparent ;
+        margin: 15% auto;
+        border: 0px solid #888;
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+  .button-container{
+    display: flex;
+     justify-content: space-between;
+    align-items: flex-end;
+      margin-top: auto;
+  }
+  
+  .blur-body {
+    filter: blur(12px); 
+    z-index: 1;
+    transition: filter 0.1s ease; 
+  }
+  
+  #t1:focus {
+    outline: none;
+    border-color: white;
+     }
+  #datetime:focus {
+    outline: none; /* Removes default browser outline */
+    border-color: white;
+    
+  }
+  #home {
+    clip-path: url(#cache);
+  }
+  
+  #red {
+    fill: none;
+    opacity: 0.15;
+    stroke: #CE1B5F;
+    stroke-width: 12;
+    stroke-miterlimit:10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+  }
+  
+  #blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: #06A1C4;
+    stroke-width: 12;
+    stroke-miterlimit:10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  #light-blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: #06A1C4;
+    stroke-width: 6;
+    stroke-miterlimit:10;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 800;
+    animation: draw 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;    
+  }
+  
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+   }
+      }
+  
+  @keyframes show {
+    0% {
+      opacity: 0.15;
+   }
+    50% {
+      opacity: 0.2;
+   }
+    100% {
+      opacity: 0.15;
+   }
+      }
+  
+  #home-anim {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; /* Place the SVG behind the content */
+      }
+  
+  
